@@ -147,8 +147,6 @@
         #hero h1 { width: 100%; height: 600px; }
 
         /* --- DYNAMIC UI LAYOUT PRESET VARIATIONS (20 TOTAL) --- */
-        
-        /* Preset 2: Inverted Layout (Swaps text and image sides) */
         .layout-inverted#grid { flex-direction: column-reverse; justify-content: space-between; }
         .layout-inverted#grid h1 { margin-bottom: 0; margin-top: 24px; }
         .layout-inverted#p { flex-direction: row-reverse; }
@@ -158,23 +156,19 @@
         .layout-inverted#hero .img-container { margin-right: 0; margin-left: 84px; }
         .layout-inverted#hero .divider { margin-right: 0; margin-left: 84px; }
 
-        /* Preset 3: Centered Structural Alignment */
         .layout-centered { text-align: center; }
         .layout-centered h1 { -webkit-box-pack: center; }
         .layout-centered .bottom { justify-content: center; gap: 40px; text-align: center; }
         .layout-centered #grid .bottom { flex-direction: column; align-items: center; gap: 8px; }
         .layout-centered .text { align-items: center; }
 
-        /* Preset 4: Minimalist Clean (Removes Dividers) */
         .layout-minimalist .divider { display: none !important; }
         .layout-minimalist #grid .img-container { height: 510px; }
 
-        /* Preset 5: Stark Brutalist (Sharp Blocks & Thick Shadows) */
         .layout-brutalist .img-container { border-radius: 0px !important; box-shadow: 20px 20px 0 0 var(--accent-color) !important; }
         .layout-brutalist #hero .img-container { border-radius: 0px !important; box-shadow: 48px 48px 0 0 var(--accent-color) !important; }
         .layout-brutalist .divider { border-radius: 0px !important; }
 
-        /* Preset 6: Title Pushed Down (Rearranges internal DOM flow using structural orders) */
         .layout-bottom-title#grid h1 { order: 3; margin-bottom: 0; margin-top: 24px; }
         .layout-bottom-title#grid .img-container { order: 1; }
         .layout-bottom-title#grid .divider { order: 2; }
@@ -183,7 +177,6 @@
         .layout-bottom-title#hero h1 { order: 2; }
         .layout-bottom-title#hero .bottom { order: 1; }
 
-        /* Preset 7: Image Heavy Frame Optimization */
         .layout-img-heavy #grid .img-container { height: 560px; }
         .layout-img-heavy #grid h1 { height: 90px; font-size: 42px; }
         .layout-img-heavy #p .img-container { width: 420px; }
@@ -191,7 +184,6 @@
         .layout-img-heavy #hero .img-container { width: 2100px; }
         .layout-img-heavy #hero .text { width: 1304px; }
 
-        /* Preset 8: Typography Heavy Frame Optimization */
         .layout-text-heavy #grid .img-container { height: 380px; }
         .layout-text-heavy #grid h1 { height: 210px; font-size: 68px; }
         .layout-text-heavy #p .img-container { width: 220px; }
@@ -201,11 +193,9 @@
         .layout-text-heavy #hero .text { width: 2104px; }
         .layout-text-heavy #hero h1 { font-size: 220px; }
 
-        /* Preset 9: Framed Edge Posters */
         .layout-framed { border: 16px solid var(--accent-color); }
         .layout-framed#hero { border-width: 48px; }
 
-        /* Preset 10: Flush Modernist (Removes Element Isolation Gaps) */
         .layout-flush { padding: 0 !important; gap: 0 !important; }
         .layout-flush .img-container { border-radius: 0 !important; box-shadow: none !important; }
         .layout-flush #p .text, .layout-flush #hero .text { padding: 42px; }
@@ -213,44 +203,34 @@
         .layout-flush #grid h1 { margin-top: 32px; }
         .layout-flush #grid .bottom { margin-bottom: 32px; }
 
-        /* Preset 11: Floating Element Shadow Block */
         .layout-floating .img-container { transform: translateY(-10px); box-shadow: 20px 30px 0 0 var(--accent-color) !important; }
         .layout-floating #hero .img-container { transform: translateY(-25px); box-shadow: 48px 64px 0 0 var(--accent-color) !important; }
 
-        /* Preset 12: Right Justified Text Alignment */
         .layout-right-aligned .text, .layout-right-aligned #grid { align-items: flex-end; text-align: right; }
         .layout-right-aligned .bottom { justify-content: flex-end; gap: 32px; }
 
-        /* Preset 13: Asymmetric Clean Scale Split */
         .layout-asymmetric #grid { padding-left: 64px; padding-right: 20px; }
         .layout-asymmetric #p .img-container { transform: skewY(-2deg); }
         .layout-asymmetric #hero .img-container { transform: skewX(-1deg); }
 
-        /* Preset 14: Striped Headers */
         .layout-striped h1 { background: var(--accent-color); color: var(--bg-color); padding: 8px 16px; border-radius: 8px; }
         .layout-striped #hero h1 { padding: 24px 48px; border-radius: 24px; }
 
-        /* Preset 15: Split Information Row */
         .layout-split-info .bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
         .layout-split-info #grid .bottom { flex-direction: row; justify-content: space-between; }
 
-        /* Preset 16: Magazine Editorial Layout Balance */
         .layout-magazine h1 { font-family: serif, system-ui; font-weight: 400; text-transform: uppercase; }
         .layout-magazine .divider { height: 2px !important; width: 100% !important; }
 
-        /* Preset 17: Compact Text Margins */
         .layout-compact-text h1 { line-height: 0.9; letter-spacing: -2px; }
         .layout-compact-text .bottom { font-size: 0.8em; }
 
-        /* Preset 18: Tall Isolated Columns */
         .layout-tall-stack#p { flex-direction: column; height: 100%; }
         .layout-tall-stack#p .img-container { width: 100%; height: 180px; margin-bottom: 16px; }
         .layout-tall-stack#p .text { width: 100%; }
 
-        /* Preset 19: Double Line Framing Architecture */
         .layout-double-divider .divider { border: 4px double var(--accent-color); background: transparent !important; }
         
-        /* Preset 20: Cyber Accented Corners */
         .layout-cyber-corners .img-container { border-radius: 40px 4px 40px 4px !important; }
         .layout-cyber-corners #hero .img-container { border-radius: 120px 12px 120px 12px !important; }
 
@@ -294,6 +274,7 @@
             box-shadow: 10px 10px 0 0 var(--accent-color);
             overflow: hidden;
             background: #161616; 
+            position: relative;
             transition: box-shadow 0.2s ease, border-radius 0.2s ease;
         }
         #hero .img-container {
@@ -301,14 +282,17 @@
             box-shadow: 24px 24px 0 0 var(--accent-color);
         }
 
+        /* Fixed: Base image element properties */
         .art-img {
             width: 100%;
             height: 100%;
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: 50% 50%;
+            background-position: center center;
+            position: absolute;
+            top: 0;
+            left: 0;
             transform-origin: center center;
-            transition: transform 0.1s ease;
         }
 
         .placeholder-text {
@@ -430,7 +414,7 @@
         
         <div class="control-group">
             <label>Image Size (Scale)</label>
-            <input type="range" id="inp-scale" min="0.5" max="3" step="0.1" value="1">
+            <input type="range" id="inp-scale" min="1" max="4" step="0.1" value="1">
         </div>
         <div class="control-group">
             <label>Image X Position</label>
@@ -543,7 +527,7 @@
             y: document.getElementById('inp-y'),
             palette: document.getElementById('inp-palette'),
             apikey: document.getElementById('inp-apikey'),
-            layout: document.getElementById('inp-layout') // New Layout Input Anchor
+            layout: document.getElementById('inp-layout')
         };
         const inpFile = document.getElementById('inp-file');
         const btnAutofill = document.getElementById('btn-autofill');
@@ -568,14 +552,16 @@
             saveState();
         }
 
+        // FIXED: Complex Matrix Pan and Zoom translation engine
         function updateImageStyles() {
             const scaleVal = inputs.scale.value;
-            const xVal = inputs.x.value;
-            const yVal = inputs.y.value;
+            // Subtract 50 to get center offsets (-50 to 50), multiply to provide deep bounds translation
+            const xPercent = (inputs.x.value - 50) * 2; 
+            const yPercent = (inputs.y.value - 50) * 2; 
             
             artImages.forEach(div => {
-                div.style.backgroundPosition = `${xVal}% ${yVal}%`;
-                div.style.transform = `scale(${scaleVal})`;
+                // Dividing percentages by scaleVal normalizes input panning speed across all zoom levels
+                div.style.transform = `scale(${scaleVal}) translate(${xPercent / scaleVal}%, ${yPercent / scaleVal}%)`;
             });
             saveState();
         }
@@ -590,14 +576,10 @@
             saveState();
         }
 
-        // Apply selected structural variation class dynamically across all canvas zones
         function updateLayout() {
             const chosenLayout = inputs.layout.value;
-            
             artworks.forEach(art => {
-                // Wipe all current custom layout-related classes clean first
                 art.className = 'artwork'; 
-                
                 if (chosenLayout !== 'default') {
                     art.classList.add(`layout-${chosenLayout}`);
                 }
